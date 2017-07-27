@@ -8,7 +8,8 @@ from time import sleep, time
 
 if __name__ == '__main__':
     # Create a BT server
-    uuid = "94f39d29-7d6d-437d-973b-fba39e49d4ee"
+    uuid = "8ce255c0-200a-11e0-ac64-0800200c9a6"
+    #uuid = "94f39d29-7d6d-437d-973b-fba39e49d4ee"
     service_name = "GossipBTServer"
     server = BTServer(uuid, service_name)
 

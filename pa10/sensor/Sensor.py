@@ -41,7 +41,7 @@ class SensorServer(Thread):
 
         # Create a lock to protect sensor output. That is, when updating the result, lock it on to prevent it from being
         # read at the same time; similarly, when reading the result, lock it on to prevent it from being updated.
-        self.sensor_output_lock = Lock()
+        self.sensor_output_lock = Lock() #스레드의 값이 이상하게 나오는 것을 막기 위해 Lock()
 
         self.db_conn = sqlite3.connect("air_pollution_data.db")
         self.db_cur = self.db_conn.cursor()
