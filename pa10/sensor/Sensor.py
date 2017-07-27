@@ -41,16 +41,16 @@ class SensorServer(Thread):
 
         # Create a lock to protect sensor output. That is, when updating the result, lock it on to prevent it from being
         # read at the same time; similarly, when reading the result, lock it on to prevent it from being updated.
-        self.sensor_output_lock = Lock()    #이걸해야 syntax 에러도 안뜸
+        self.sensor_output_lock = Lock()
 
         self.db_conn = sqlite3.connect("air_pollution_data.db")
         self.db_cur = self.db_conn.cursor()
         for sensor_name in self.sensor_names:
-            self.db_cur.execute("CREATE TABLE IF NOT EXISTS %s (PRIMARY KEY time int, value real)" % sensor_name)
+            self.db_cur.execute("CREATE TABLE IF NOT EXISTS %s (time int PRIMARY KEY NOT NULL, value real)" % sensor_name)
 
     def get_sensor_output(self):
         # Get the latest sensor output
-        return self.sensor_output.copy() #이거는 json
+        return self.sensor_output.copy()
 
     def set_mux_channel(self, m):
         # Set MUX channel
@@ -99,7 +99,7 @@ class SensorServer(Thread):
                 logger.info("Reading %s sensor..." % self.sensor_names[i])
                 print "Reading %s sensor..." % self.sensor_names[i]
                 v1, v2 = self.read_sensor(i)
-                self.sensor_output[self.sensor_names[i]] = v1 - v2 #나중에 더 자세히 바꿔야해 일단 이렇게...
+                self.sensor_output[self.sensor_names[i]] = v1 - v2
 
             self.sensor_output_lock.release()
 

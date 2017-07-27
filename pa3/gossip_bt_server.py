@@ -10,18 +10,18 @@ if __name__ == '__main__':
     # Create a BT server
     uuid = "94f39d29-7d6d-437d-973b-fba39e49d4ee"
     service_name = "GossipBTServer"
-    server = BTServer(uuid, service_name) #서버 만들기
+    server = BTServer(uuid, service_name)
 
     # Create the server thread and run it
-    server_thread = Thread(target=asyncore.loop, name="Gossip BT Server Thread") #이런 스레드 만들기
-    server_thread.daemon = True #서버 스레드가 계속 돌아감, 그리고 항상 True로 함
+    server_thread = Thread(target=asyncore.loop, name="Gossip BT Server Thread")
+    server_thread.daemon = True
     server_thread.start()
 
     while True:
-        for client_handler in server.active_client_handlers.copy(): #copy를 안쓰면 서버에서 에러가뜬다.
+        for client_handler in server.active_client_handlers.copy():
             # Use a copy() to get the copy of the set, avoiding 'set change size during iteration' error
             # Create CSV message "'realtime', time, temp, SN1, SN2, SN3, SN4, PM25\n"
-            msg = "realtime, %d, %f, %f, %f, %f, %f, %f\n" % \ # d는 double이 아니고 integer
+            msg = "realtime, %d, %f, %f, %f, %f, %f, %f\n" % \
                   (int(time()),         # epoch time
                    uniform(20, 30),     # random temperature
                    uniform(40, 50),     # random SN1 value
@@ -37,4 +37,4 @@ if __name__ == '__main__':
                 client_handler.handle_close()
 
             # Sleep for 3 seconds
-        sleep(2)
+        sleep(3)
