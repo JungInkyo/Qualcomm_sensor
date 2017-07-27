@@ -22,7 +22,7 @@ if __name__ == '__main__':
         for client_handler in server.active_client_handlers.copy():
             # Use a copy() to get the copy of the set, avoiding 'set change size during iteration' error
             # Create CSV message "'realtime', time, temp, SN1, SN2, SN3, SN4, PM25\n"
-            msg = "realtime, %d, %f, %f, %f, %f, %f, %f\n" % \
+            msg = "1, %d, %f, %f, %f, %f, %f, %f\n" % \
                   (int(time()),         # epoch time
                    uniform(20, 30),     # random temperature
                    uniform(40, 50),     # random SN1 value
