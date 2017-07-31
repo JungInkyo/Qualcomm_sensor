@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e56129d-c863-40d5-b9e6-8aa278729f90" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pa3/gossip_bt_server.py" afterPath="$PROJECT_DIR$/pa3/gossip_bt_server.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +18,8 @@
       <file leaf-file-name="gossip_bt_server.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pa3/gossip_bt_server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="56" column="44" lean-forward="false" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
+            <state relative-caret-position="256">
+              <caret line="45" column="59" lean-forward="true" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -454,8 +455,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pa3/gossip_bt_server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="56" column="44" lean-forward="false" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
+        <state relative-caret-position="256">
+          <caret line="45" column="59" lean-forward="true" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
