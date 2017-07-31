@@ -7,6 +7,7 @@ import json
 from random import uniform
 from threading import Thread
 from time import sleep, time
+import datetime
 
 if __name__ == '__main__':
     # Create option parser
@@ -30,7 +31,8 @@ if __name__ == '__main__':
         for client_handler in server.active_client_handlers.copy():
             # Use a copy() to get the copy of the set, avoiding 'set change size during iteration' error
             # Create CSV message "'realtime', time, temp, SN1, SN2, SN3, SN4, PM25\n"
-            epoch_time = int(time())    # epoch time
+            epoch_time = int(datetime.datetime.now())    # epoch time
+            #epoch_time = int(time())
             temp = uniform(20, 30)      # random temperature
             SN1 = uniform(40, 50)       # random SN1 value
             SN2 = uniform(60, 70)       # random SN2 value
@@ -41,7 +43,7 @@ if __name__ == '__main__':
             msg = ""
             if args.output_format == "csv":
                 #msg = "%d, %f, %f, %f, %f, %f, %f" % (epoch_time, temp, SN1, SN2, SN3, SN4, PM25)
-                msg = "realtime, %d, %f, %f, %f, %f, %f, %f" % (epoch_time, temp, SN1, SN2, SN3, SN4, PM25)
+                msg = "%d, %d, %f, %f, %f, %f, %f, %f" % (0,epoch_time, temp, SN1, SN2, SN3, SN4, PM25)
             elif args.output_format == "json":
                 output = {'type': 'realtime',
                           'time': epoch_time,
