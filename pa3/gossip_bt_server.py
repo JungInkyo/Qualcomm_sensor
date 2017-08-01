@@ -31,8 +31,8 @@ if __name__ == '__main__':
         for client_handler in server.active_client_handlers.copy():
             # Use a copy() to get the copy of the set, avoiding 'set change size during iteration' error
             # Create CSV message "'realtime', time, temp, SN1, SN2, SN3, SN4, PM25\n"
-            real_time = datetime.datetime.now()  #real time
-            #epoch_time = int(time()) # epoch time
+            #real_time = datetime.datetime.now()  #real time
+            epoch_time = int(time()) # epoch time
             raw = int(open("/sys/bus/iio/devices/iio:device0/in_voltage0_raw").read())
             v = 5 * 0.000244140625 * raw
             t = (1000 * v) - 642
@@ -51,10 +51,10 @@ if __name__ == '__main__':
             msg = ""
             if args.output_format == "csv":
                 #msg = "%d, %f, %f, %f, %f, %f, %f" % (epoch_time, temp, SN1, SN2, SN3, SN4, PM25)
-                msg = "%d, %s, %f, %f, %f, %f, %f, %f" % (0,real_time, temp, SN1, SN2, SN3, SN4, PM25)
+                msg = "%d, %s, %f, %f, %f, %f, %f, %f" % (0,epoch_time, temp, SN1, SN2, SN3, SN4, PM25)
             elif args.output_format == "json":
                 output = {'type': 'realtime',
-                          'time': real_time,
+                          'time': epoch_time,
                           'SN1': SN1,
                           'SN2': SN2,
                           'SN3': SN3,
