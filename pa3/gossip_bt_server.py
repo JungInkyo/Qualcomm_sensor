@@ -55,7 +55,7 @@ if __name__ == '__main__':
             elif args.output_format == "json":
                 output = {'type': 0,
                           'time': epoch_time,
-                          'CO2': SN1,
+                          'CO': SN1,
                           'SO2': SN2,
                           'NO2': SN3,
                           'O3': SN4,
