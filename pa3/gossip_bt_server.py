@@ -53,13 +53,13 @@ if __name__ == '__main__':
                 #msg = "%d, %f, %f, %f, %f, %f, %f" % (epoch_time, temp, SN1, SN2, SN3, SN4, PM25)
                 msg = "%d, %s, %f, %f, %f, %f, %f, %f" % (0,epoch_time, temp, SN1, SN2, SN3, SN4, PM25)
             elif args.output_format == "json":
-                output = {'type': 0,
+                output = [{'type': 0,
                           'time': epoch_time,
                           'CO': SN1,
                           'SO2': SN2,
                           'NO2': SN3,
                           'O3': SN4,
-                          'PM25': PM25}
+                          'PM25': PM25}]
                 msg = json.dumps(output)
             try:
                 client_handler.send(msg + '\n')
