@@ -20,7 +20,7 @@
               <entry file="file://$PROJECT_DIR$/pa10a/Team_C_sensor.py">
                 <provider selected="true" editor-type-id="text-editor">
                   <state relative-caret-position="133">
-                    <caret line="52" column="16" lean-forward="true" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+                    <caret line="52" column="18" lean-forward="false" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
                     <folding>
                       <element signature="e#0#29#0" expanded="true" />
                     </folding>
@@ -736,7 +736,7 @@
     <entry file="file://$PROJECT_DIR$/pa10a/Team_C_sensor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="52" column="16" lean-forward="true" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+          <caret line="52" column="18" lean-forward="false" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>

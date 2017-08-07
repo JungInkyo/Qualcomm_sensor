@@ -50,7 +50,7 @@ if __name__ == '__main__':
             # Create CSV message "'realtime', time, temp, SN1, SN2, SN3, SN4, PM25\n"
             sensor_output = sensor_server.get_sensor_output()
             raw = sensor_output.get('Temp', -1)
-            v = 5/4096 * raw
+            v = 5./4096 * raw
             t = (1000 * v) - 277
             temp = t
             epoch_time = int(time())    # epoch time
