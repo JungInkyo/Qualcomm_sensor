@@ -54,7 +54,7 @@ if __name__ == '__main__':
             t = (1000 * v) - 642
             temp = t
             #epoch_time = int(time())    # epoch time
-            real_time = datetime.datetime.now()  # real time
+            real_time = time.localtime()  # real time
             SN1 = sensor_output.get('SN1', -1)      # random SN1 value
             SN2 = sensor_output.get('SN2', -1)       # random SN2 value
             SN3 = sensor_output.get('SN3', -1)       # random SN3 value
