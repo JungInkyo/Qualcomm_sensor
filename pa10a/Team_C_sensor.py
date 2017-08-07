@@ -66,7 +66,7 @@ if __name__ == '__main__':
                 msg = "realtime, %d, %f, %f, %f, %f, %f, %f" % (real_time, temp, SN1, SN2, SN3, SN4, PM25)
             elif args.output_format == "json":
                 output = {'type': 'realtime',
-                          'time': real_time,
+                          #'time': real_time,
                           'temp': temp,
                           'NO2': SN1,
                           'O3': SN2,
