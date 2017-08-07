@@ -53,8 +53,8 @@ if __name__ == '__main__':
             v = 5 * 0.000244140625 * raw
             t = (1000 * v) - 642
             temp = t
-            #epoch_time = int(time())    # epoch time
-            real_time = time.localtime()  # real time
+            epoch_time = int(time())    # epoch time
+            #real_time = time.localtime()  # real time
             SN1 = sensor_output.get('SN1', -1)      # random SN1 value
             SN2 = sensor_output.get('SN2', -1)       # random SN2 value
             SN3 = sensor_output.get('SN3', -1)       # random SN3 value
@@ -63,10 +63,10 @@ if __name__ == '__main__':
 
             msg = ""
             if args.output_format == "csv":
-                msg = "realtime, %d, %f, %f, %f, %f, %f, %f" % (real_time, temp, SN1, SN2, SN3, SN4, PM25)
+                msg = "realtime, %d, %f, %f, %f, %f, %f, %f" % (epoch_time, temp, SN1, SN2, SN3, SN4, PM25)
             elif args.output_format == "json":
                 output = {'type': 'realtime',
-                          #'time': real_time,
+                          'time': epoch_time,
                           'temp': temp,
                           'NO2': SN1,
                           'O3': SN2,
