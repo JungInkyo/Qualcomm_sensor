@@ -49,10 +49,11 @@ if __name__ == '__main__':
             # Use a copy() to get the copy of the set, avoiding 'set change size during iteration' error
             # Create CSV message "'realtime', time, temp, SN1, SN2, SN3, SN4, PM25\n"
             sensor_output = sensor_server.get_sensor_output()
-            raw = sensor_output.get('Temp', -1)
-            v = 5./4096 * raw
-            t = (1000 * v) - 277
-            temp = t
+            #raw = sensor_output.get('Temp', -1)
+            #v = 5./4096 * raw
+            #t = (1000 * v) - 277
+            #temp = t
+            temp = sensor_output.get('Temp', -1)
             epoch_time = int(time())    # epoch time
             #real_time = time.localtime()  # real time
             SN1 = sensor_output.get('SN1', -1)      # real NO2 value
