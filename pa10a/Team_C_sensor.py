@@ -55,11 +55,11 @@ if __name__ == '__main__':
             temp = t
             epoch_time = int(time())    # epoch time
             #real_time = time.localtime()  # real time
-            SN1 = sensor_output.get('SN1', -1)      # random SN1 value
-            SN2 = sensor_output.get('SN2', -1)       # random SN2 value
-            SN3 = sensor_output.get('SN3', -1)       # random SN3 value
-            SN4 = sensor_output.get('SN4', -1)     # random SN4 value
-            PM25 = sensor_output.get('PM25', -1)    # random PM25 value
+            SN1 = sensor_output.get('SN1', -1)      # real NO2 value
+            SN2 = sensor_output.get('SN2', -1)       # real O3 value
+            SN3 = sensor_output.get('SN3', -1)       # real CO value
+            SN4 = sensor_output.get('SN4', -1)     # real SO2 value
+            PM25 = sensor_output.get('PM25', -1)    # real PM25 value
 
             msg = ""
             if args.output_format == "csv":
