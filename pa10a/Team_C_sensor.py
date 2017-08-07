@@ -50,8 +50,8 @@ if __name__ == '__main__':
             # Create CSV message "'realtime', time, temp, SN1, SN2, SN3, SN4, PM25\n"
             sensor_output = sensor_server.get_sensor_output()
             raw = sensor_output.get('Temp', -1)
-            v = 5 * 0.000244140625 * raw
-            t = (1000 * v) - 642
+            v = (5/4096) * raw
+            t = (1000 * v) - 277
             temp = t
             epoch_time = int(time())    # epoch time
             #real_time = time.localtime()  # real time
@@ -65,7 +65,7 @@ if __name__ == '__main__':
             if args.output_format == "csv":
                 msg = "realtime, %d, %f, %f, %f, %f, %f, %f" % (epoch_time, temp, SN1, SN2, SN3, SN4, PM25)
             elif args.output_format == "json":
-                output = {'type': 'realtime',
+                output = {'type': '0',
                           'time': epoch_time,
                           'temp': temp,
                           'NO2': SN1,
