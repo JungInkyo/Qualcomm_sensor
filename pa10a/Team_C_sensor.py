@@ -82,4 +82,4 @@ if __name__ == '__main__':
                 client_handler.handle_close()
 
             # Sleep for 3 seconds
-        sleep(30)
+        sleep(3)
