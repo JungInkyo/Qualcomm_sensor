@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e56129d-c863-40d5-b9e6-8aa278729f90" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pa10b/Team_C_sensor.py" afterPath="$PROJECT_DIR$/pa10b/Team_C_sensor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pa3/gossip_bt_server_InK.py" afterPath="$PROJECT_DIR$/pa3/gossip_bt_server_InK.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,8 +19,8 @@
             <file leaf-file-name="gossip_bt_server_InK.py" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/pa3/gossip_bt_server_InK.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="209">
-                    <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+                  <state relative-caret-position="399">
+                    <caret line="45" column="25" lean-forward="true" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
                     <folding>
                       <element signature="e#0#29#0" expanded="true" />
                     </folding>
@@ -70,8 +70,8 @@
         <option value="$PROJECT_DIR$/pa10b/Team_C_pa10b.py" />
         <option value="$PROJECT_DIR$/pa10a/sensor/Sensor.py" />
         <option value="$PROJECT_DIR$/pa10b/sensor/Sensor.py" />
-        <option value="$PROJECT_DIR$/pa3/gossip_bt_server_InK.py" />
         <option value="$PROJECT_DIR$/pa10b/Team_C_sensor.py" />
+        <option value="$PROJECT_DIR$/pa3/gossip_bt_server_InK.py" />
       </list>
     </option>
   </component>
@@ -682,8 +682,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pa3/gossip_bt_server_InK.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        <state relative-caret-position="399">
+          <caret line="45" column="25" lean-forward="true" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>

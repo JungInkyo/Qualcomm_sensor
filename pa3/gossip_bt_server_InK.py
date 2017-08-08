@@ -37,11 +37,11 @@ if __name__ == '__main__':
             v = 5 * 0.000244140625 * raw
             t = (1000 * v) - 642
             temp = t     # random temperature
-            SN1 = uniform(0, 2049)  # random SN1 value
-            SN2 = uniform(0, 604)  # random SN2 value
-            SN3 = uniform(0, 50.4)  # random SN3 value
-            SN4 = uniform(0, 1004)  # random SN4 value
-            PM25 = uniform(20, 50)  # random PM25 value
+            SN1 = round(uniform(0, 2049), 3)  # random SN1 value
+            SN2 = round(uniform(0, 604), 3)  # random SN2 value
+            SN3 = round(uniform(0, 50.4), 3)  # random SN3 value
+            SN4 = round(uniform(0, 1004), 3)  # random SN4 value
+            PM25 = round(uniform(0, 500.4), 3)  # random PM25 value
             #SN1 = uniform(40, 50)       # random SN1 value
             #SN2 = uniform(60, 70)       # random SN2 value
             #SN3 = uniform(80, 90)       # random SN3 value
