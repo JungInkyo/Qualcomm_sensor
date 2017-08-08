@@ -10,6 +10,8 @@ import sqlite3
 from threading import Thread
 from time import gmtime, sleep, strftime, time
 import datetime
+from random import uniform
+
 
 logger = logging.getLogger(__name__)
 
@@ -56,10 +58,10 @@ if __name__ == '__main__':
             temp = sensor_output.get('Temp', -1)
             epoch_time = int(time())    # epoch time
             #real_time = time.localtime()  # real time
-            SN1 = sensor_output.get('SN1', -1)      # real NO2 value
-            SN2 = sensor_output.get('SN2', -1)       # real O3 value
-            SN3 = sensor_output.get('SN3', -1)       # real CO value
-            SN4 = sensor_output.get('SN4', -1)     # real SO2 value
+            SN1 = uniform(0, 2049)  # random SN1 value
+            SN2 = uniform(0, 604)  # random SN2 value
+            SN3 = uniform(0, 50.4)  # random SN3 value
+            SN4 = uniform(0, 1004)     # real SO2 value
             PM25 = sensor_output.get('PM25', -1)    # real PM25 value
 
             msg = ""
