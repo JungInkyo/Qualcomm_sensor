@@ -64,13 +64,13 @@ class SensorServer(Thread):
         # -----------------------------------------------
         #   int | real | real | real | real | real | real
         self.db_cur.execute(("CREATE TABLE IF NOT EXISTS history (time int PRIMARY KEY NOT NULL,"
-                             " {0} real, {1} real, {2} real, {3} real, {4} real, {5} real)").format(
-            self.sensor_names[0],
-            self.sensor_names[1],
-            self.sensor_names[2],
-            self.sensor_names[3],
-            self.sensor_names[4],
-            self.sensor_names[5]))
+                             " {0} real, {1} real, {2} real, {3} real, {4} real, {5} real)")
+                            .format(self.sensor_names[0],
+                                    self.sensor_names[1],
+                                    self.sensor_names[2],
+                                    self.sensor_names[3],
+                                    self.sensor_names[4],
+                                    self.sensor_names[5]))
 
         # Commit the changes. When a database is accessed by multiple connections, and one of the processes modifies the
         # database, the SQLite database is locked until that transaction is committed. The timeout parameter specifies
@@ -156,7 +156,7 @@ class SensorServer(Thread):
 
             logger.info("Reading {} sensor...".format(self.sensor_names[1]))
             c2, c3 = self.read_sensor(1)
-            sn1 = ((c2 - 0.215) - (1.35)*(c3 - 0.246))/(0.212)
+            sn1 = ((c2 - 0.215) - (1.35) * (c3 - 0.246)) / (0.212)
             logger.info("{} sensor outputs {} ppb".format(self.sensor_names[1], sn1))
             # Save output to the dict
             self.sensor_output[self.sensor_names[1]] = sn1
@@ -169,15 +169,15 @@ class SensorServer(Thread):
             self.sensor_output[self.sensor_names[2]] = sn2
 
             logger.info("Reading {} sensor...".format(self.sensor_names[3]))
-            c6, c7 = self.read_sensor(3)    # CO
-            sn3 = ((c6-0.215) - (-1)*(c7 -0.246))/(0.266)
+            c6, c7 = self.read_sensor(3)
+            sn3 = ((c6 - 0.215) - (-1) * (c7 - 0.246)) / (0.266)
             logger.info("{} sensor outputs {} ppb".format(self.sensor_names[3], sn3))
             # Save output to the dict
             self.sensor_output[self.sensor_names[3]] = sn3
 
             logger.info("Reading {} sensor...".format(self.sensor_names[4]))
             c8, c9 = self.read_sensor(4)
-            sn4 = ((c8-0.28) - (1.82)*(c9-0.306))/(0.296)
+            sn4 = ((c8 - 0.28) - (1.82) * (c9 - 0.306)) / (0.296)
             logger.info("{} sensor outputs {} ppb".format(self.sensor_names[4], sn4))
             # Save output to the dict
             self.sensor_output[self.sensor_names[4]] = sn4
@@ -189,11 +189,16 @@ class SensorServer(Thread):
             # Save output to the dict
             self.sensor_output[self.sensor_names[5]] = pm25
 
-            self.db_cur.execute("INSERT INTO history VALUES ({}, {}, {}, {}, {}, {}, {})".format(
-                epoch_time, temp, sn1, sn2, sn3, sn4, pm25))
+            self.db_cur.execute("INSERT INTO history VALUES ({}, {}, {}, {}, {}, {}, {})"
+                                .format(epoch_time, temp, sn1, sn2, sn3, sn4, pm25))
 
             self.db_conn.commit()
             self.sensor_output_lock.release()
 
             # Idle for 3 seconds
             sleep(1.8)
+
+#sn1 = ((c2 - 0.215) - (1.35)*(c3 - 0.246))/(0.212)
+#sn2 = ((c4-0.39) - (1.28)*(c5 -0.393))/(0.276)
+#sn3 = ((c6-0.215) - (-1)*(c7 -0.246))/(0.266)
+#sn4 = ((c8-0.28) - (1.82)*(c9-0.306))/(0.296)
