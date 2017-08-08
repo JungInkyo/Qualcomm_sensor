@@ -149,7 +149,7 @@ class SensorServer(Thread):
             self.db_cur.execute("INSERT INTO {} VALUES ({}, {})".format(self.sensor_names[0], epoch_time, temperature))
 
             logger.info("Reading {} sensor...".format(self.sensor_names[1]))
-            c2, c3 = self.read_sensor(1)
+            c2, c3 = self.read_sensor(1)    # NO2
             output = ((c2 - 0.215) - 1.35*(c3 - 0.246))/(0.212)
             logger.info("{} sensor outputs {} ppb".format(self.sensor_names[1], output))
             # Save output to the dict
