@@ -53,13 +53,13 @@ if __name__ == '__main__':
             #v = 5./4096 * raw
             #t = (1000 * v) - 277
             #temp = t
-            temp = sensor_output.get('Temp', -1)
+            temp = sensor_output.get('temp', -1)
             epoch_time = int(time())    # epoch time
             #real_time = time.localtime()  # real time
-            SN1 = sensor_output.get('SN1', -1)      # real NO2 value
-            SN2 = sensor_output.get('SN2', -1)       # real O3 value
-            SN3 = sensor_output.get('SN3', -1)       # real CO value
-            SN4 = sensor_output.get('SN4', -1)     # real SO2 value
+            SN1 = sensor_output.get('sn1', -1)      # real NO2 value
+            SN2 = sensor_output.get('sn2', -1)       # real O3 value
+            SN3 = sensor_output.get('sn3', -1)       # real CO value
+            SN4 = sensor_output.get('sn4', -1)     # real SO2 value
             PM25 = sensor_output.get('PM25', -1)    # real PM25 value
 
             msg = ""
