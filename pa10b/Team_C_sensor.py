@@ -62,7 +62,7 @@ if __name__ == '__main__':
             SN2 = round(uniform(0, 604), 3)  # random SN2 value
             SN3 = round(uniform(0, 50.4), 3)  # random SN3 value
             SN4 = round(uniform(0, 1004), 3)     # real SO2 value
-            PM25 = sensor_output.get('PM25', -1)    # real PM25 value
+            PM25 = round(uniform(0, 500), 3)    # real PM25 value
 
             #temp = sensor_output.get('Temp', -1)
             #SN1 = sensor_output.get('SN1', -1)
