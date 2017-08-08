@@ -57,7 +57,7 @@ if __name__ == '__main__':
             epoch_time = int(time())    # epoch time
             #real_time = time.localtime()  # real time
             SN1 = sensor_output.get('SN1', -1)      # real NO2 value
-            SN2 = sensor_output.get('SM2', -1)       # real O3 value
+            SN2 = sensor_output.get('SN2', -1)       # real O3 value
             SN3 = sensor_output.get('SN3', -1)       # real CO value
             SN4 = sensor_output.get('SN4', -1)     # real SO2 value
             PM25 = sensor_output.get('PM25', -1)    # real PM25 value
