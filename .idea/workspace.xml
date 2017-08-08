@@ -29,8 +29,8 @@
       <file leaf-file-name="Sensor.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pa10a/sensor/Sensor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="152" column="57" lean-forward="true" selection-start-line="152" selection-start-column="57" selection-end-line="152" selection-end-column="57" />
+            <state relative-caret-position="480">
+              <caret line="176" column="36" lean-forward="false" selection-start-line="176" selection-start-column="36" selection-end-line="176" selection-end-column="36" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -780,8 +780,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pa10a/sensor/Sensor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="152" column="57" lean-forward="true" selection-start-line="152" selection-start-column="57" selection-end-line="152" selection-end-column="57" />
+        <state relative-caret-position="480">
+          <caret line="176" column="36" lean-forward="false" selection-start-line="176" selection-start-column="36" selection-end-line="176" selection-end-column="36" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
