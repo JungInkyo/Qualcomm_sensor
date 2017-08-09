@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e56129d-c863-40d5-b9e6-8aa278729f90" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pa10c/btserver/bthandler.py" afterPath="$PROJECT_DIR$/pa10c/btserver/bthandler.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +29,7 @@
       <file leaf-file-name="C_Team.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pa10c/C_Team.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1976">
+            <state relative-caret-position="294">
               <caret line="104" column="36" lean-forward="false" selection-start-line="104" selection-start-column="36" selection-end-line="104" selection-end-column="36" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
@@ -42,8 +41,8 @@
       <file leaf-file-name="bthandler.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pa10c/btserver/bthandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+            <state relative-caret-position="-437">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -713,7 +712,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pa10c/C_Team.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1976">
+        <state relative-caret-position="294">
           <caret line="104" column="36" lean-forward="false" selection-start-line="104" selection-start-column="36" selection-end-line="104" selection-end-column="36" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
@@ -723,8 +722,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pa10c/btserver/bthandler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        <state relative-caret-position="-437">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
