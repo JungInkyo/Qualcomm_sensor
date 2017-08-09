@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e56129d-c863-40d5-b9e6-8aa278729f90" name="Default" comment="" />
+    <list default="true" id="9e56129d-c863-40d5-b9e6-8aa278729f90" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pa10b/Team_C_sensor.py" afterPath="$PROJECT_DIR$/pa10b/Team_C_sensor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pa10c/sensor/Sensor.py" afterPath="$PROJECT_DIR$/pa10c/sensor/Sensor.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,33 +15,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Team_C_sensor.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Team_C_sensor.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pa10b/Team_C_sensor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="75" column="86" lean-forward="false" selection-start-line="75" selection-start-column="67" selection-end-line="75" selection-end-column="86" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sensor.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pa10b/sensor/Sensor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-304">
-              <caret line="151" column="31" lean-forward="true" selection-start-line="151" selection-start-column="31" selection-end-line="151" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="C_Team.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pa10c/C_Team.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="114" column="53" lean-forward="false" selection-start-line="114" selection-start-column="53" selection-end-line="114" selection-end-column="53" />
+            <state relative-caret-position="207">
+              <caret line="59" column="13" lean-forward="false" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -68,9 +49,10 @@
         <option value="$PROJECT_DIR$/pa10b/Team_C_pa10b.py" />
         <option value="$PROJECT_DIR$/pa10a/sensor/Sensor.py" />
         <option value="$PROJECT_DIR$/pa3/gossip_bt_server_InK.py" />
-        <option value="$PROJECT_DIR$/pa10b/Team_C_sensor.py" />
         <option value="$PROJECT_DIR$/pa10b/sensor/Sensor.py" />
         <option value="$PROJECT_DIR$/pa10c/C_Team.py" />
+        <option value="$PROJECT_DIR$/pa10c/sensor/Sensor.py" />
+        <option value="$PROJECT_DIR$/pa10b/Team_C_sensor.py" />
       </list>
     </option>
   </component>
@@ -117,6 +99,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pa10c" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Qualcomm_sensor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Qualcomm_sensor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pa10c" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sensor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -356,13 +356,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pa3/gossip_bt_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GpioExample.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -680,31 +673,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pa10b/Team_C_sensor.py">
+    <entry file="file://$PROJECT_DIR$/pa10c/C_Team.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="75" column="86" lean-forward="false" selection-start-line="75" selection-start-column="67" selection-end-line="75" selection-end-column="86" />
+        <state relative-caret-position="209">
+          <caret line="68" column="48" lean-forward="false" selection-start-line="68" selection-start-column="48" selection-end-line="68" selection-end-column="48" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pa10c/C_Team.py">
+    <entry file="file://$PROJECT_DIR$/pa10c/sensor/Sensor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="114" column="53" lean-forward="false" selection-start-line="114" selection-start-column="53" selection-end-line="114" selection-end-column="53" />
+        <state relative-caret-position="342">
+          <caret line="191" column="29" lean-forward="false" selection-start-line="191" selection-start-column="29" selection-end-line="191" selection-end-column="29" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pa10b/sensor/Sensor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-304">
-          <caret line="151" column="31" lean-forward="true" selection-start-line="151" selection-start-column="31" selection-end-line="151" selection-end-column="31" />
+        <state relative-caret-position="399">
+          <caret line="188" column="166" lean-forward="true" selection-start-line="186" selection-start-column="12" selection-end-line="188" selection-end-column="166" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pa10b/Team_C_sensor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="59" column="13" lean-forward="false" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

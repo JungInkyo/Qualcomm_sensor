@@ -58,18 +58,18 @@ if __name__ == '__main__':
             temp = sensor_output.get('Temp', -1)
             epoch_time = int(time())    # epoch time
             #real_time = time.localtime()  # real time
-            #SN1 = round(uniform(0, 2049), 3)  # random SN1 value
-            #SN2 = round(uniform(0, 604), 3)  # random SN2 value
-            #SN3 = round(uniform(0, 50.4), 3)  # random SN3 value
-            #SN4 = round(uniform(0, 1004), 3)     # real SO2 value
-            #PM25 = round(uniform(0, 500), 3)    # real PM25 value
+            SN1 = round(uniform(0, 2049), 3)  # random SN1 value
+            SN2 = round(uniform(0, 604), 3)  # random SN2 value
+            SN3 = round(uniform(0, 50.4), 3)  # random SN3 value
+            SN4 = round(uniform(0, 1004), 3)     # real SO2 value
+            PM25 = round(uniform(0, 500), 3)    # real PM25 value
 
             #temp = sensor_output.get('Temp', -1)
-            SN1 = sensor_output.get('SN1', -1)
-            SN2 = sensor_output.get('SN2', -1)
-            SN3 = sensor_output.get('SN3', -1)
-            SN4 = sensor_output.get('SN4', -1)
-            PM25 = sensor_output.get('PM25', -1)
+            #SN1 = sensor_output.get('SN1', -1)
+            #SN2 = sensor_output.get('SN2', -1)
+            #SN3 = sensor_output.get('SN3', -1)
+            #SN4 = sensor_output.get('SN4', -1)
+            #PM25 = sensor_output.get('PM25', -1)
 
             msg = ""
             if args.output_format == "csv":
