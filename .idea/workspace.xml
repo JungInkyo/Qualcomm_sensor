@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9e56129d-c863-40d5-b9e6-8aa278729f90" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pa10c/C_Team.py" afterPath="$PROJECT_DIR$/pa10c/C_Team.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pa10c/sensor/Sensor.py" afterPath="$PROJECT_DIR$/pa10c/sensor/Sensor.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +18,9 @@
       <file leaf-file-name="Sensor.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pa10c/sensor/Sensor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2546">
-              <caret line="139" column="11" lean-forward="true" selection-start-line="139" selection-start-column="11" selection-end-line="139" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-399">
+              <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -29,8 +28,8 @@
       <file leaf-file-name="C_Team.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pa10c/C_Team.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="24" column="66" lean-forward="false" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
+            <state relative-caret-position="290">
+              <caret line="114" column="92" lean-forward="false" selection-start-line="114" selection-start-column="92" selection-end-line="114" selection-end-column="92" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -56,6 +55,7 @@
       <find>database_name</find>
       <find>sqlite</find>
       <find>start</find>
+      <find>Thre</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -263,7 +263,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1370" height="735" extended-state="1" />
+    <frame x="-8" y="0" width="1370" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1491876" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -653,18 +653,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pa10c/sensor/Sensor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2546">
-          <caret line="139" column="11" lean-forward="true" selection-start-line="139" selection-start-column="11" selection-end-line="139" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-399">
+          <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pa10c/C_Team.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="24" column="66" lean-forward="false" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
+        <state relative-caret-position="290">
+          <caret line="114" column="92" lean-forward="false" selection-start-line="114" selection-start-column="92" selection-end-line="114" selection-end-column="92" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
