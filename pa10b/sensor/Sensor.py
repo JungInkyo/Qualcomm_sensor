@@ -163,7 +163,7 @@ class SensorServer(Thread):
 
             logger.info("Reading {} sensor...".format(self.sensor_names[2]))
             c4, c5 = self.read_sensor(2)    # O3
-            sn2 = (1.22*c4*(-390) - (1.28)*(1.22*c5 -393)) / (0.276)
+            sn2 = ((1.22*c4-390) - (1.28)*(1.22*c5 -393)) / (0.276)
             logger.info("{} sensor outputs {} ppb".format(self.sensor_names[2], sn2))
             # Save output to the dict
             self.sensor_output[self.sensor_names[2]] = sn2
