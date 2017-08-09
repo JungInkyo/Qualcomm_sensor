@@ -194,7 +194,7 @@ class SensorServer(Thread):
                 t0 = 50
             elif (0 <= 1.22*c0 < 50):
                 t0 = 0
-            
+
             temp = 1.22 * c0 - t0
 
             logger.info("{} sensor outputs {} degree".format(self.sensor_names[0], temp))

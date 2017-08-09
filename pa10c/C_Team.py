@@ -113,7 +113,7 @@ if __name__ == '__main__':
                     for row in results:
                         i += 1
                         h_msg = "{},{},{},{},{},{},{},{}".format('4e:71:9e:8c:3f:ee', row[0], round(row[1], 2), round(row[2], 2), round(row[3], 2), round(row[4], 2), round(row[5], 2), round(row[6], 2))
-                        client_handler.send('h' + h_msg + '\n')
+                        client_handler.send(h_msg + '\n')
 
                         print "INFO: Sending results ({}/{})...\r".format(i, n),
                         # A character is 8-bit long, so the whole string has (len(h_msg) + 2) * 8 bits; the default
@@ -132,7 +132,7 @@ if __name__ == '__main__':
                 try:
                     # Add the leading character 'r' to indicate its a real-time data, and a newline character '\n'
                     # to indicate the end of the line
-                    client_handler.send('r' + r_msg + '\n')
+                    client_handler.send(r_msg + '\n')
                 except Exception as e:
                     BTError.print_error(handler=client_handler, error=BTError.ERR_WRITE, error_message=repr(e))
                     client_handler.handle_close()
