@@ -198,4 +198,4 @@ class SensorServer(Thread):
             self.sensor_output_lock.release()
 
             # Idle for 3 seconds
-            sleep(1.8)
+            sleep(1)
