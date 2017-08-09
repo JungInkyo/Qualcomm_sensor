@@ -149,11 +149,54 @@ class SensorServer(Thread):
             t0 = 0
             c0, c1 = self.read_sensor(0)
             # Channel 1 is not connected so we don't care about its output
-            a0 = 1.22 * c0 - t0
-            if (a0 >= 0):
-                temp = a0
+            if (c0 >= 0):
+                c0 = c0
             else:
-                temp = -a0
+                c0 = -c0
+
+            if(950 <= 1.22*c0 < 1000):
+                 t0 = 950
+            elif (900 <= 1.22*c0 < 950):
+                t0 = 900
+            elif (850 <= 1.22*c0 < 900):
+                t0 = 850
+            elif (800 <= 1.22*c0 < 850):
+                t0 = 800
+            elif (750 <= 1.22*c0 < 800):
+                t0 = 750
+            elif (700 <= 1.22*c0 < 750):
+                t0 = 700
+            elif (650 <= 1.22*c0 < 700):
+                t0 = 650
+            elif (600 <= 1.22*c0 < 650):
+                t0 = 600
+            elif (550 <= 1.22*c0 < 600):
+                t0 = 550
+            elif (500 <= 1.22*c0 < 550):
+                t0 = 500
+            elif (450 <= 1.22*c0 < 500):
+                t0 = 450
+            elif (400 <= 1.22*c0 < 450):
+                t0 = 400
+            elif (350 <= 1.22*c0 < 400):
+                t0 = 350
+            elif (300 <= 1.22*c0 < 350):
+                t0 = 300
+            elif (250 <= 1.22*c0 < 300):
+                t0 = 250
+            elif (200 <= 1.22*c0 < 250):
+                t0 = 200
+            elif (150 <= 1.22*c0 < 200):
+                t0 = 150
+            elif (100 <= 1.22*c0 < 150):
+                t0 = 100
+            elif (50 <= 1.22*c0 < 100):
+                t0 = 50
+            elif (0 <= 1.22*c0 < 50):
+                t0 = 0
+            
+            temp = 1.22 * c0 - t0
+
             logger.info("{} sensor outputs {} degree".format(self.sensor_names[0], temp))
             # Save output to the dict
             self.sensor_output[self.sensor_names[0]] = temp
