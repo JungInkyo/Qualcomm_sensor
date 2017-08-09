@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e56129d-c863-40d5-b9e6-8aa278729f90" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pa10c/sensor/Sensor.py" afterPath="$PROJECT_DIR$/pa10c/sensor/Sensor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pa10b/Team_C_sensor.py" afterPath="$PROJECT_DIR$/pa10b/Team_C_sensor.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,6 +15,18 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Team_C_sensor.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pa10b/Team_C_sensor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="63" column="20" lean-forward="false" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Sensor.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pa10c/sensor/Sensor.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -26,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="C_Team.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="C_Team.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pa10c/C_Team.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-770">
-              <caret line="75" column="35" lean-forward="true" selection-start-line="75" selection-start-column="35" selection-end-line="75" selection-end-column="35" />
+            <state relative-caret-position="256">
+              <caret line="129" column="32" lean-forward="true" selection-start-line="129" selection-start-column="32" selection-end-line="129" selection-end-column="32" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -61,9 +74,9 @@
         <option value="$PROJECT_DIR$/pa10a/sensor/Sensor.py" />
         <option value="$PROJECT_DIR$/pa3/gossip_bt_server_InK.py" />
         <option value="$PROJECT_DIR$/pa10b/sensor/Sensor.py" />
-        <option value="$PROJECT_DIR$/pa10b/Team_C_sensor.py" />
         <option value="$PROJECT_DIR$/pa10c/C_Team.py" />
         <option value="$PROJECT_DIR$/pa10c/sensor/Sensor.py" />
+        <option value="$PROJECT_DIR$/pa10b/Team_C_sensor.py" />
       </list>
     </option>
   </component>
@@ -693,16 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pa10b/Team_C_sensor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1121">
-          <caret line="59" column="13" lean-forward="false" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pa10c/sensor/Sensor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="474">
@@ -715,8 +718,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pa10c/C_Team.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-770">
-          <caret line="75" column="35" lean-forward="true" selection-start-line="75" selection-start-column="35" selection-end-line="75" selection-end-column="35" />
+        <state relative-caret-position="256">
+          <caret line="129" column="32" lean-forward="true" selection-start-line="129" selection-start-column="32" selection-end-line="129" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pa10b/Team_C_sensor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="63" column="20" lean-forward="false" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
