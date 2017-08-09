@@ -149,35 +149,35 @@ class SensorServer(Thread):
             t0 = 277
             c0, c1 = self.read_sensor(0)
             # Channel 1 is not connected so we don't care about its output
-            temp = c0 - t0
+            temp = 1.22*c0 - t0
             logger.info("{} sensor outputs {} degree".format(self.sensor_names[0], temp))
             # Save output to the dict
             self.sensor_output[self.sensor_names[0]] = temp
 
             logger.info("Reading {} sensor...".format(self.sensor_names[1]))
             c2, c3 = self.read_sensor(1)    # NO2
-            sn1 = ((c2 - 215) - (1.35)*(c3 - 246)) / (212)
+            sn1 = ((1.22*c2 - 215) - (1.35)*(1.22*c3 - 246)) / (0.212)
             logger.info("{} sensor outputs {} ppb".format(self.sensor_names[1], sn1))
             # Save output to the dict
             self.sensor_output[self.sensor_names[1]] = sn1
 
             logger.info("Reading {} sensor...".format(self.sensor_names[2]))
             c4, c5 = self.read_sensor(2)    # O3
-            sn2 = (c4*(-390) - (1.28)*(c5 -393)) / (276)
+            sn2 = (1.22*c4*(-390) - (1.28)*(1.22*c5 -393)) / (0.276)
             logger.info("{} sensor outputs {} ppb".format(self.sensor_names[2], sn2))
             # Save output to the dict
             self.sensor_output[self.sensor_names[2]] = sn2
 
             logger.info("Reading {} sensor...".format(self.sensor_names[3]))
             c6, c7 = self.read_sensor(3)    # CO
-            sn3 = ((c6 - 215) - (-1)*(c7 - 246)) / (266)
+            sn3 = ((1.22*c6 - 215) - (-1)*(1.22*c7 - 246)) / (0.266)*0.001
             logger.info("{} sensor outputs {} ppb".format(self.sensor_names[3], sn3))
             # Save output to the dict
             self.sensor_output[self.sensor_names[3]] = sn3
 
             logger.info("Reading {} sensor...".format(self.sensor_names[4]))
             c8, c9 = self.read_sensor(4)    #SO2
-            sn4 = ((c8 - 280) - (1.82) * (c9 - 306)) / (296)
+            sn4 = ((1.22*c8 - 280) - (1.82) * (1.22*c9 - 306)) / (0.296)
             logger.info("{} sensor outputs {} ppb".format(self.sensor_names[4], sn4))
             # Save output to the dict
             self.sensor_output[self.sensor_names[4]] = sn4
