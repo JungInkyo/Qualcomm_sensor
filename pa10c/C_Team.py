@@ -22,7 +22,7 @@ if __name__ == '__main__':
     parser.add_argument("--database", dest="database_name", default="air_pollution_data.db",
                         help="specify database file")
     parser.add_argument("--baud-rate", dest="baud_rate", default=115200,
-                        help="specify Bluetooth baud rate in bps") # 빠바박 보내는 속도
+                        help="specify Bluetooth baud rate in bps")
 
     args = parser.parse_args()
 
