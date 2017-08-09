@@ -75,7 +75,8 @@ if __name__ == '__main__':
             if args.output_format == "csv":
                 msg = "realtime, %d, %f, %f, %f, %f, %f, %f" % (epoch_time, temp, SN1, SN2, SN3, SN4, PM25)
             elif args.output_format == "json":
-                output = {'type': '0',
+                output = {'MAC' : '4e:71:9e:8c:3f:ee',
+                          'type': 0,
                           'time': epoch_time,
                           'temp': temp,
                           'NO2': SN1,
