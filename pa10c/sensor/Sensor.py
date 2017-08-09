@@ -195,7 +195,7 @@ class SensorServer(Thread):
             elif (0 <= 1.22*c0 < 50):
                 t0 = 0
 
-            temp = 1.22 * c0 - t0
+            temp = c0 - t0
 
             logger.info("{} sensor outputs {} degree".format(self.sensor_names[0], temp))
             # Save output to the dict
@@ -203,7 +203,7 @@ class SensorServer(Thread):
 
             logger.info("Reading {} sensor...".format(self.sensor_names[1]))
             c2, c3 = self.read_sensor(1)
-            a1 = ((1.22 * c2 - 215) - (1.18) * (1.22 * c3 - 246)) / (0.212)
+            a1 = ((c2 - 215) - (1.18) * (c3 - 246)) / (0.212)
             if (a1 >= 0):
                 sn1 = a1
             else:
@@ -214,7 +214,7 @@ class SensorServer(Thread):
 
             logger.info("Reading {} sensor...".format(self.sensor_names[2]))
             c4, c5 = self.read_sensor(2)
-            a2 = ((1.22 * c4 - 390) - (0.18) * (1.22 * c5 - 393)) / (0.276)
+            a2 = ((c4 - 390) - (0.18) * (c5 - 393)) / (0.276)
             if (a2 >= 0):
                 sn2 = a2
             else:
@@ -225,7 +225,7 @@ class SensorServer(Thread):
 
             logger.info("Reading {} sensor...".format(self.sensor_names[3]))
             c6, c7 = self.read_sensor(3)
-            a3 = ((1.22 * c6 - 215) - (0.03) * (1.22 * c7 - 246)) / (0.266) * 0.001
+            a3 = ((c6 - 215) - (0.03) * (c7 - 246)) / (0.266) * 0.001
             if (a3 >= 0):
                 sn3 = a3
             else:
@@ -236,7 +236,7 @@ class SensorServer(Thread):
 
             logger.info("Reading {} sensor...".format(self.sensor_names[4]))
             c8, c9 = self.read_sensor(4)
-            a4 = ((1.22 * c8 - 280) - (1.15) * (1.22 * c9 - 306)) / (0.296)
+            a4 = ((c8 - 280) - (1.15) * (c9 - 306)) / (0.296)
             if (a4 >= 0):
                 sn4 = a4
             else:
@@ -247,7 +247,7 @@ class SensorServer(Thread):
 
             logger.info("Reading {} sensor...".format(self.sensor_names[5]))
             c10, c11 = self.read_sensor(5)
-            aa = 1.22 * c10 / 1000
+            aa = c10 / 1000
             pm25 = 0.518 + 0.00274 * (240.0 * pow(aa, 6) - 2491.3 * pow(aa, 5) + 9448.7 * pow(aa, 4) - 14840.0 * pow(aa, 3) + 10684.0 * pow(aa, 2) + 2211.8 * aa + 7.9623)
             # pm25 = 0.518+0.00274*(240.0*(1.22*c10)**6-2491.3*(1.22*c10)**5+9448.7*(1.22*c10)**4-14840.0*(1.22*c10)**3+10684.0*(1.22*c10)**2+2211.8*(1.22*c10)+7.9623)
             logger.info("{} sensor outputs {} ppb".format(self.sensor_names[5], pm25))
