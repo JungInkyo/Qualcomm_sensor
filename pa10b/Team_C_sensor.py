@@ -60,7 +60,8 @@ if __name__ == '__main__':
             #real_time = time.localtime()  # real time
             SN1 = round(uniform(0, 2049), 3)  # random SN1 value
             SN2 = round(uniform(0, 604), 3)  # random SN2 value
-            SN3 = round(uniform(0, 50.4), 3)  # random SN3 value
+            SN3 = 10
+            #SN3 = round(uniform(0, 50.4), 3)  # random SN3 value
             SN4 = round(uniform(0, 1004), 3)     # real SO2 value
             PM25 = round(uniform(0, 500), 3)    # real PM25 value
 
