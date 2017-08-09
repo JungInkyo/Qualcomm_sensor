@@ -156,35 +156,36 @@ class SensorServer(Thread):
 
             logger.info("Reading {} sensor...".format(self.sensor_names[1]))
             c2, c3 = self.read_sensor(1)    # NO2
-            sn1 = ((1.22*c2 - 215) - (1.35)*(1.22*c3 - 246)) / (0.212)
+            sn1 = ((1.22*c2 - 215) - (1.18)*(1.22*c3 - 246)) / (0.212)
             logger.info("{} sensor outputs {} ppb".format(self.sensor_names[1], sn1))
             # Save output to the dict
             self.sensor_output[self.sensor_names[1]] = sn1
 
             logger.info("Reading {} sensor...".format(self.sensor_names[2]))
             c4, c5 = self.read_sensor(2)    # O3
-            sn2 = ((1.22*c4-390) - (1.28)*(1.22*c5 -393)) / (0.276)
+            sn2 = ((1.22*c4-390) - (0.18)*(1.22*c5 -393)) / (0.276)
             logger.info("{} sensor outputs {} ppb".format(self.sensor_names[2], sn2))
             # Save output to the dict
             self.sensor_output[self.sensor_names[2]] = sn2
 
             logger.info("Reading {} sensor...".format(self.sensor_names[3]))
             c6, c7 = self.read_sensor(3)    # CO
-            sn3 = ((1.22*c6 - 215) - (-1)*(1.22*c7 - 246)) / (0.266)*0.001
+            sn3 = ((1.22*c6 - 215) - (0.03)*(1.22*c7 - 246)) / (0.266)*0.001
             logger.info("{} sensor outputs {} ppb".format(self.sensor_names[3], sn3))
             # Save output to the dict
             self.sensor_output[self.sensor_names[3]] = sn3
 
             logger.info("Reading {} sensor...".format(self.sensor_names[4]))
             c8, c9 = self.read_sensor(4)    #SO2
-            sn4 = ((1.22*c8 - 280) - (1.82) * (1.22*c9 - 306)) / (0.296)
+            sn4 = ((1.22*c8 - 280) - (1.15) * (1.22*c9 - 306)) / (0.296)
             logger.info("{} sensor outputs {} ppb".format(self.sensor_names[4], sn4))
             # Save output to the dict
             self.sensor_output[self.sensor_names[4]] = sn4
 
             logger.info("Reading {} sensor...".format(self.sensor_names[5]))
             c10, c11 = self.read_sensor(5)
-            pm25 = c10 - c11
+            aa = 1.22*c10
+            pm25 = 0.518 + 0.00274*(240.0*pow(aa,6) - 2491.3*pow(aa,5) + 9448.7*pow(aa,4) - 14840.0*pow(aa,3) + 10684.0*pow(aa,2) + 2211.8*aa + 7.9623)
             logger.info("{} sensor outputs {} ppb".format(self.sensor_names[5], pm25))
             # Save output to the dict
             self.sensor_output[self.sensor_names[5]] = pm25
