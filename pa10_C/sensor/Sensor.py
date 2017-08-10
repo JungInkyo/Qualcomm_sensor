@@ -276,6 +276,7 @@ class SensorServer(Thread):
             elif (2500 <= sn2):
                 sn2 = sn2 - 2100
             # O3
+            # T
             logger.info("{} sensor outputs {} ppb".format(self.sensor_names[2], sn2))
             # Save output to the dict
             self.sensor_output[self.sensor_names[2]] = sn2
