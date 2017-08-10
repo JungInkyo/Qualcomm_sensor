@@ -208,7 +208,7 @@ class SensorServer(Thread):
                 sn1 = a1
             else:
                 sn1 = -a1
-
+            #NO2
             logger.info("{} sensor outputs {} ppb".format(self.sensor_names[1], sn1))
             # Save output to the dict
             self.sensor_output[self.sensor_names[1]] = sn1
@@ -220,7 +220,7 @@ class SensorServer(Thread):
                 sn2 = a2
             else:
                 sn2 = -a2
-
+            #O3
             logger.info("{} sensor outputs {} ppb".format(self.sensor_names[2], sn2))
             # Save output to the dict
             self.sensor_output[self.sensor_names[2]] = sn2
@@ -232,6 +232,7 @@ class SensorServer(Thread):
                 sn3 = a3
             else:
                 sn3 = -a3
+            #CO
             logger.info("{} sensor outputs {} ppb".format(self.sensor_names[3], sn3))
             # Save output to the dict
             self.sensor_output[self.sensor_names[3]] = sn3
@@ -243,6 +244,7 @@ class SensorServer(Thread):
                 sn4 = a4
             else:
                 sn4 = -a4
+            #SO2
             logger.info("{} sensor outputs {} ppb".format(self.sensor_names[4], sn4))
             # Save output to the dict
             self.sensor_output[self.sensor_names[4]] = sn4
