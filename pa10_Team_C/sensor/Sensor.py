@@ -249,7 +249,8 @@ class SensorServer(Thread):
 
             logger.info("Reading {} sensor...".format(self.sensor_names[5]))
             c10, c11 = self.read_sensor(5)
-            aa = c10 * 1000
+            #aa = c10 * 1000
+            aa = c10
             pm25 = 0.518 + 0.00274 * (240.0 * pow(aa, 6) - 2491.3 * pow(aa, 5) + 9448.7 * pow(aa, 4) - 14840.0 * pow(aa, 3) + 10684.0 * pow(aa, 2) + 2211.8 * aa + 7.9623)
             # pm25 = 0.518+0.00274*(240.0*(1.22*c10)**6-2491.3*(1.22*c10)**5+9448.7*(1.22*c10)**4-14840.0*(1.22*c10)**3+10684.0*(1.22*c10)**2+2211.8*(1.22*c10)+7.9623)
             logger.info("{} sensor outputs {} ppb".format(self.sensor_names[5], pm25))
