@@ -184,7 +184,7 @@ class SensorServer(Thread):
                 t0 = 300
             elif (250 <= c0 < 300):
                 t0 = 250
-            elif (200 <= 1.22*c0 < 250):
+            elif (200 <= c0 < 250):
                 t0 = 200
             elif (150 <= c0 < 200):
                 t0 = 150
@@ -203,13 +203,14 @@ class SensorServer(Thread):
 
             logger.info("Reading {} sensor...".format(self.sensor_names[1]))
             c2, c3 = self.read_sensor(1)
-            a1 = ((c2 - 215) - (1.18) * (c3 - 246)) / (0.212)
+            a1 = ((c2 - 215) - (1.18) * (c3 - 246)) / (0.0212)
+            #a1 = ((c2 - 215) - (1.18) * (c3 - 246)) / (0.212)
             if (a1 >= 0):
                 sn1 = a1
             else:
                 sn1 = -a1
 
-            if (2000 <= sn1 < 2100):
+            '''if (2000 <= sn1 < 2100):
                 sn1 = sn1 - 250
             elif (2100 <= sn1 < 2200):
                 sn1 = sn1 - 350
@@ -220,7 +221,7 @@ class SensorServer(Thread):
             elif (2400 <= sn1 < 2500):
                 sn1 = sn1 - 650
             elif (2500 <= sn1):
-                sn1 = sn1- 750
+                sn1 = sn1- 750'''
 
             #NO2
             logger.info("{} sensor outputs {} ppb".format(self.sensor_names[1], sn1))
@@ -229,13 +230,14 @@ class SensorServer(Thread):
 
             logger.info("Reading {} sensor...".format(self.sensor_names[2]))
             c4, c5 = self.read_sensor(2)
-            a2 = ((c4 - 390) - (0.18) * (c5 - 393)) / (0.276)
+            #a2 = ((c4 - 390) - (0.18) * (c5 - 393)) / (0.276)
+            a2 = ((c4 - 390) - (0.18) * (c5 - 393)) / (0.0276)
             if (a2 >= 0):
                 sn2 = a2
             else:
                 sn2 = -a2
 
-            if (600 <= sn2 <700):
+            '''if (600 <= sn2 <700):
                 sn2 = sn2 - 200
             elif (700 <= sn2 <800):
                 sn2 =sn2 - 300
@@ -274,8 +276,9 @@ class SensorServer(Thread):
             elif (2400 <= sn2 < 2500):
                 sn2 = sn2 - 2000
             elif (2500 <= sn2):
-                sn2 = sn2 - 2100
+                sn2 = sn2 - 2100'''
             # O3
+
             # T
             logger.info("{} sensor outputs {} ppb".format(self.sensor_names[2], sn2))
             # Save output to the dict
@@ -283,14 +286,11 @@ class SensorServer(Thread):
 
             logger.info("Reading {} sensor...".format(self.sensor_names[3]))
             c6, c7 = self.read_sensor(3)
-            a3 = ((c6 - 215) - (0.03) * (c7 - 246)) / (0.266) * 0.001
+            a3 = ((c6 - 215) - (0.03) * (c7 - 246)) / (0.266) * 0.01
             if (a3 >= 0):
                 sn3 = a3
             else:
                 sn3 = -a3
-
-            sn3 = 10*sn3
-
 
             #CO
             logger.info("{} sensor outputs {} ppb".format(self.sensor_names[3], sn3))
@@ -299,13 +299,14 @@ class SensorServer(Thread):
 
             logger.info("Reading {} sensor...".format(self.sensor_names[4]))
             c8, c9 = self.read_sensor(4)
-            a4 = ((c8 - 280) - (1.15) * (c9 - 306)) / (0.296)
+            #a4 = ((c8 - 280) - (1.15) * (c9 - 306)) / (0.296)
+            a4 = ((c8 - 280) - (1.15) * (c9 - 306)) / (0.0296)
             if (a4 >= 0):
                 sn4 = a4
             else:
                 sn4 = -a4
 
-            if (1000 <= sn4 < 1100):
+            '''if (1000 <= sn4 < 1100):
                 sn4 = sn4 - 200
             elif (1100 <= sn4 < 1200):
                 sn4 = sn4 - 300
@@ -322,7 +323,7 @@ class SensorServer(Thread):
             elif (1800 <= sn4 < 1900):
                 sn4 = sn4 - 900
             elif (2000 <= sn4):
-                sn4 = sn4- 1000
+                sn4 = sn4- 1000'''
             #SO2
             logger.info("{} sensor outputs {} ppb".format(self.sensor_names[4], sn4))
             # Save output to the dict
@@ -332,9 +333,9 @@ class SensorServer(Thread):
             c10, c11 = self.read_sensor(5)
             #aa = c10 * 1000
             aa = c10/1000
-            pm25 = 0.518 + 0.00274 * (240.0 * pow(aa, 6) - 2491.3 * pow(aa, 5) + 9448.7 * pow(aa, 4) - 14840.0 * pow(aa, 3) + 10684.0 * pow(aa, 2) + 2211.8 * aa + 7.9623)
+            pm25 = 0.518 + 0.000274 * (240.0 * pow(aa, 6) - 2491.3 * pow(aa, 5) + 9448.7 * pow(aa, 4) - 14840.0 * pow(aa, 3) + 10684.0 * pow(aa,2) + 2211.8 * aa + 7.9623)
+            #pm25 = 0.518 + 0.00274 * (240.0 * pow(aa, 6) - 2491.3 * pow(aa, 5) + 9448.7 * pow(aa, 4) - 14840.0 * pow(aa, 3) + 10684.0 * pow(aa, 2) + 2211.8 * aa + 7.9623)
             # pm25 = 0.518+0.00274*(240.0*(1.22*c10)**6-2491.3*(1.22*c10)**5+9448.7*(1.22*c10)**4-14840.0*(1.22*c10)**3+10684.0*(1.22*c10)**2+2211.8*(1.22*c10)+7.9623)
-            pm25 = 10 * pm25
             logger.info("{} sensor outputs {} ppb".format(self.sensor_names[5], pm25))
             # Save output to the dict
             self.sensor_output[self.sensor_names[5]] = pm25
