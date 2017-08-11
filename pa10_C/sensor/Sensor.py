@@ -203,7 +203,7 @@ class SensorServer(Thread):
 
             logger.info("Reading {} sensor...".format(self.sensor_names[1]))
             c2, c3 = self.read_sensor(1)
-            a1 = ((c2 - 215) - (1.18) * (c3 - 246)) / (0.0212)
+            a1 = ((c2 - 215) - (1.18) * (c3 - 246)) / (0.00212)
             #a1 = ((c2 - 215) - (1.18) * (c3 - 246)) / (0.212)
             if (a1 >= 0):
                 sn1 = a1
@@ -231,7 +231,7 @@ class SensorServer(Thread):
             logger.info("Reading {} sensor...".format(self.sensor_names[2]))
             c4, c5 = self.read_sensor(2)
             #a2 = ((c4 - 390) - (0.18) * (c5 - 393)) / (0.276)
-            a2 = ((c4 - 390) - (0.18) * (c5 - 393)) / (0.0276)
+            a2 = ((c4 - 390) - (0.18) * (c5 - 393)) / (0.00276)
             if (a2 >= 0):
                 sn2 = a2
             else:
@@ -300,7 +300,7 @@ class SensorServer(Thread):
             logger.info("Reading {} sensor...".format(self.sensor_names[4]))
             c8, c9 = self.read_sensor(4)
             #a4 = ((c8 - 280) - (1.15) * (c9 - 306)) / (0.296)
-            a4 = ((c8 - 280) - (1.15) * (c9 - 306)) / (0.0296)
+            a4 = ((c8 - 280) - (1.15) * (c9 - 306)) / (0.00296)
             if (a4 >= 0):
                 sn4 = a4
             else:
