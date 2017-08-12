@@ -197,6 +197,8 @@ class SensorServer(Thread):
 
 
             temp = c0 - t0
+
+            # T
             logger.info("{} sensor outputs {} degree".format(self.sensor_names[0], temp))
             # Save output to the dict
             self.sensor_output[self.sensor_names[0]] = temp
@@ -209,19 +211,6 @@ class SensorServer(Thread):
                 sn1 = a1
             else:
                 sn1 = -a1
-
-            '''if (2000 <= sn1 < 2100):
-                sn1 = sn1 - 250
-            elif (2100 <= sn1 < 2200):
-                sn1 = sn1 - 350
-            elif (2200 <= sn1 < 2300):
-                sn1 = sn1 - 450
-            elif (2300 <= sn1< 2400):
-                sn1 = sn1 - 550
-            elif (2400 <= sn1 < 2500):
-                sn1 = sn1 - 650
-            elif (2500 <= sn1):
-                sn1 = sn1- 750'''
 
             #NO2
             logger.info("{} sensor outputs {} ppb".format(self.sensor_names[1], sn1))
@@ -237,49 +226,9 @@ class SensorServer(Thread):
             else:
                 sn2 = -a2
 
-            '''if (600 <= sn2 <700):
-                sn2 = sn2 - 200
-            elif (700 <= sn2 <800):
-                sn2 =sn2 - 300
-            elif (800 <= sn2 < 900):
-                sn2 = sn2 - 400
-            elif (900 <= sn2 < 1000):
-                sn2 = sn2 - 500
-            elif (1000 <= sn2 < 1100):
-                sn2 = sn2 - 600
-            elif (1100 <= sn2 < 1200):
-                sn2 = sn2 - 700
-            elif (1200 <= sn2 < 1300):
-                sn2 = sn2 - 800
-            elif (1300 <= sn2 < 1400):
-                sn2 = sn2 - 900
-            elif (1400 <= sn2 < 1500):
-                sn2 = sn2 - 1000
-            elif (1500 <= sn2 < 1600):
-                sn2 = sn2 - 1100
-            elif (1600 <= sn2 < 1700):
-                sn2 = sn2 - 1200
-            elif (1700 <= sn2 < 1800):
-                sn2 = sn2 - 1300
-            elif (1800 <= sn2 < 1900):
-                sn2 = sn2 - 1400
-            elif (1900 <= sn2 < 2000):
-                sn2 = sn2 - 1500
-            elif (2000 <= sn2 < 2100):
-                sn2 = sn2 - 1600
-            elif (2100 <= sn2 < 2200):
-                sn2 = sn2 - 1700
-            elif (2200 <= sn2 < 2300):
-                sn2 = sn2 - 1800
-            elif (2300 <= sn2 < 2400):
-                sn2 = sn2 - 1900
-            elif (2400 <= sn2 < 2500):
-                sn2 = sn2 - 2000
-            elif (2500 <= sn2):
-                sn2 = sn2 - 2100'''
             # O3
 
-            # T
+
             logger.info("{} sensor outputs {} ppb".format(self.sensor_names[2], sn2))
             # Save output to the dict
             self.sensor_output[self.sensor_names[2]] = sn2
@@ -306,24 +255,6 @@ class SensorServer(Thread):
             else:
                 sn4 = -a4
 
-            '''if (1000 <= sn4 < 1100):
-                sn4 = sn4 - 200
-            elif (1100 <= sn4 < 1200):
-                sn4 = sn4 - 300
-            elif (1200 <= sn4 < 1300):
-                sn4 = sn4 - 400
-            elif (1300 <= sn4< 1400):
-                sn4 = sn4 - 500
-            elif (1400 <= sn4 < 1500):
-                sn4 = sn4 - 600
-            elif (1600 <= sn4 < 1700):
-                sn4 = sn4 - 700
-            elif (1700 <= sn4 < 1800):
-                sn4 = sn4 - 800
-            elif (1800 <= sn4 < 1900):
-                sn4 = sn4 - 900
-            elif (2000 <= sn4):
-                sn4 = sn4- 1000'''
             #SO2
             logger.info("{} sensor outputs {} ppb".format(self.sensor_names[4], sn4))
             # Save output to the dict
