@@ -31,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/pa10_C/sensor/Sensor.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="309">
-              <caret line="274" column="164" lean-forward="true" selection-start-line="274" selection-start-column="164" selection-end-line="274" selection-end-column="164" />
+              <caret line="274" column="61" lean-forward="false" selection-start-line="274" selection-start-column="61" selection-end-line="274" selection-end-column="61" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -630,7 +630,7 @@
     <entry file="file://$PROJECT_DIR$/pa10_C/sensor/Sensor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
-          <caret line="274" column="164" lean-forward="true" selection-start-line="274" selection-start-column="164" selection-end-line="274" selection-end-column="164" />
+          <caret line="274" column="61" lean-forward="false" selection-start-line="274" selection-start-column="61" selection-end-line="274" selection-end-column="61" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
